@@ -10,7 +10,7 @@ def cat_file(args):
     with open(fp, "rb") as f:
         content = zlib.decompress(f.read())
         _, content = content.split(b'\x00')
-        print(content, end="")
+        print(content.decode('utf-8'), end="")
 
 
 def main():

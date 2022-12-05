@@ -1,5 +1,6 @@
 import sys
 import os
+os.system("pip install click")
 import zlib
 import click
 import hashlib
